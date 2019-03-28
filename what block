@@ -1,0 +1,396 @@
+
+/**
+ * A program to determine what block of the schedule it is 
+ *
+ * @LMADAN
+ * @3/27
+ */
+import java.util.Scanner;
+public class WhatBlock
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Is it Wednesday? True or false");
+        boolean wed = in.nextBoolean();
+        if(wed == true)
+        {
+           System.out.println("What Time is it?(hours miltary time)");
+           int hour = in.nextInt();
+           System.out.println("What Time is it?(minutes)");
+           int minute = in.nextInt();
+           int totalTime = hour*60 + minute;
+           
+           System.out.println("What day is it?");
+           int day =in.nextInt();
+           
+           if(day == 1)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is B block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is C block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is E block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is F block");
+               }
+           }
+           if (day == 2)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is C block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is D block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is F block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is G block");
+               }
+           }
+           if (day == 3)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is D block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is A block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is G block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is E block");
+               }
+           }
+           if (day == 4)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is A block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is B block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is E block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is F block");
+               }
+           }
+           if (day == 5)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is B block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is C block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is G block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is F block");
+               }
+           }
+           if (day == 6)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is D block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is E block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is F block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is G block");
+               }
+           }
+           if (day == 7)
+           {
+               if(totalTime > 557 && totalTime < 613)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 613 && totalTime < 673)
+               {
+                 System.out.println("It is A block");
+               }
+               else if(totalTime > 667 && totalTime < 761)
+               {
+                 System.out.println("It is D block");
+               }
+               else if(totalTime > 765 && totalTime < 821)
+               {
+                 System.out.println("It is G block");
+               }
+               else if(totalTime > 825 && totalTime < 881)
+               {
+                 System.out.println("It is E block");
+               }
+           }
+        }
+        if(wed == false)
+        {
+           System.out.println("What Time is it?(hours miltary time)");
+           int hour = in.nextInt();
+           System.out.println("What Time is it?(minutes)");
+           int minute = in.nextInt();
+           int totalTime = hour*60 + minute;
+           
+           System.out.println("What day is it?");
+           int day =in.nextInt();
+           
+           if(day == 1)
+           {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is E block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is F block");
+               }
+            }
+            if(day == 2)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is F block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is G block");
+               }
+            }
+            if(day == 3)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is G block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is E block");
+               }
+            }
+            if(day == 4)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is E block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is F block");
+               }
+            }
+            if(day == 5)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is G block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is F block");
+               }
+            }
+            if(day == 6)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is C block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is E block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is F block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is G block");
+               }
+            }
+            if(day == 7)
+            {
+               if(totalTime > 490 && totalTime < 553)
+               {
+                   System.out.println("It is B block");
+               }
+               else if(totalTime > 557 && totalTime < 620)
+               {
+                   System.out.println("It is A block");
+               }
+               else if(totalTime > 624 && totalTime < 687)
+               {
+                   System.out.println("It is D block");
+               }
+               else if(totalTime > 691 && totalTime < 782)
+               {
+                   System.out.println("It is G block");
+               }
+               else if(totalTime > 786 && totalTime < 814)
+               {
+                   System.out.println("It is H block");
+               }
+               else if(totalTime > 818 && totalTime < 881)
+               {
+                   System.out.println("It is E block");
+               }
+            }
+}
+}
+}
+
+
+
+
